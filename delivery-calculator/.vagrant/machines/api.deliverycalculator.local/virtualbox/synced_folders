@@ -1,0 +1,1 @@
+{"nfs":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/C/Users/andre/Documents/WebDev/demos/DeliveryCalculator/delivery-calculator","disabled":false,"type":"nfs","__vagrantfile":true,"map_uid":0,"map_gid":0,"nfs_version":3,"nfs_udp":true,"uuid":"1489635592","mount_options":["vers=3","udp","nolock"]}}}
