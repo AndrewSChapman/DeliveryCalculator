@@ -7,6 +7,8 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
-.idea
-*.log
-.vagrant
+
+###> symfony/phpunit-bridge ###
+.phpunit
+/phpunit.xml
+###< symfony/phpunit-bridge ###

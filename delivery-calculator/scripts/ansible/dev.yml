@@ -44,6 +44,11 @@
       name: php-mysql
       state: present
 
+  - name: Install php-mbstring
+    yum:
+      name: php-mbstring
+      state: present
+
   - name: Install php-gd
     yum:
       name: php-gd
@@ -54,9 +59,9 @@
       name: php-pear
       state: present
 
-  - name: Install php-composer
+  - name: Install composer
     yum:
-      name: php-pear
+      name: composer
       state: present
 
   - name: Copy sites-available nginx template
