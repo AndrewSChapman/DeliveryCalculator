@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Delivery Calculator Demonstration</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://code.jquery.com/ui/1.12.1/themes/cupertino/jquery-ui.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Delivery Date Calculator</h1>
+
+        <form id="frmDeliveryCalculator" class="frmDeliveryCalculator" method="post">
+            <fieldset>
+                <legend>Please select your order date and delivery region</legend>
+
+                <div class="input-group">
+                    <label for="orderDate">Order Date</label>
+                    <input type="text" id="orderDate" name="orderDate" required />
+                </div>
+
+                <div class="input-group">
+                    <label for="orderTime">Order Time</label>
+                    <input type="time" id="orderTime" name="orderTime" required />
+                </div>
+
+                <div class="region">
+                    <label for="regionId">Region</label>
+                    <select id="regionId" name="regionId" required>
+                        <option value="">Choose</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <input type="submit" value="Calculate Delivery Date" />
+                </div>
+            </fieldset>
+        </form>
+
+        <div id="result" class="result">
+            <h2>Your delivery date will be:</h2>
+            <p>TBA</p>
+        </div>
+
+        <div id="loader" class="loader">
+            <img src="http://api.deliverycalculator.local/images/loading.gif" height="32" width="32"/>
+        </div>
+    </div>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script
+            src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
+
+    <script src="js/apiClient.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>
