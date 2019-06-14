@@ -5,6 +5,12 @@ namespace App\Core\Type;
 use App\Core\Type\Exception\ConstraintException;
 use Ramsey\Uuid\Uuid;
 
+/**
+ * Class Id
+ * @package App\Core\Type
+ *
+ * Creates and stores a UUID, useful for database identifier.
+ */
 abstract class Id
 {
     private $uuid;

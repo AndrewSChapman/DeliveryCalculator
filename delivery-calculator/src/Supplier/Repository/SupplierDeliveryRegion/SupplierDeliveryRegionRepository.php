@@ -8,6 +8,12 @@ use App\Supplier\Collection\SupplierDeliveryRegionCollection;
 use App\Supplier\Entity\SupplierDeliveryRegion;
 use App\Supplier\Type\SupplierId;
 
+/**
+ * Class SupplierDeliveryRegionRepository
+ * @package App\Supplier\Repository\SupplierDeliveryRegion
+ *
+ * Implements the supplier delivery region repository interface.
+ */
 class SupplierDeliveryRegionRepository implements SupplierDeliveryRegionRepositoryInterface
 {
     public function getSupplierDeliveryRegionsForSupplier(SupplierId $supplierId): SupplierDeliveryRegionCollection

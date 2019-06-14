@@ -7,6 +7,12 @@ use App\Core\Type\WholeNumber;
 use App\Supplier\Type\SupplierId;
 use App\Supplier\Type\SupplierName;
 
+/**
+ * Class Supplier
+ * @package App\Supplier\Entity
+ *
+ * Stores the details of a supplier
+ */
 class Supplier
 {
     /** @var SupplierId */

@@ -4,6 +4,12 @@ namespace App\Core\Type;
 
 use App\Core\Type\Exception\ConstraintException;
 
+/**
+ * Class WholeNumber
+ * @package App\Core\Type
+ *
+ * Ensures that numbers are whole numbers (0 or greater than 0.  Negative numbers are not allowed).
+ */
 class WholeNumber
 {
     /** @var int */

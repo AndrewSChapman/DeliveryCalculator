@@ -1,9 +1,16 @@
 <?php
+
 namespace App\Region\Entity;
 
 use App\Region\Type\RegionId;
 use App\Region\Type\RegionName;
 
+/**
+ * Class Region
+ * @package App\Region\Entity
+ *
+ * Represents a delivery region
+ */
 class Region
 {
     /** @var RegionId */

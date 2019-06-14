@@ -7,6 +7,12 @@ use App\Core\Data\Exception\ItemNotFoundException;
 use App\Core\Type\DayNumber;
 use App\Supplier\Entity\SupplierDeliveryDay;
 
+/**
+ * Class SupplierDeliveryDayCollection
+ * @package App\Supplier\Collection
+ *
+ * Stores a collection of SupplierDeliveryDay entities
+ */
 class SupplierDeliveryDayCollection extends AbstractCollection
 {
     public function add(SupplierDeliveryDay $supplierDeliveryDay): void

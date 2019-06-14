@@ -5,6 +5,13 @@ namespace App\Core\Type;
 use App\Core\Type\Exception\ConstraintException;
 use App\Core\Type\Exception\InvalidTimeException;
 
+/**
+ * Class Time
+ * @package App\Core\Type
+ *
+ * Stores a time value as seconds since midnight.
+ * Can be constructed via time string with Time::fromString('09:45:00')
+ */
 class Time
 {
     /** @var WholeNumber */

@@ -7,6 +7,12 @@ use App\Region\Type\RegionId;
 use App\Region\Type\RegionName;
 use App\Region\Collection\RegionCollection;
 
+/**
+ * Class RegionRepository
+ * @package App\Region\Repository\Region
+ *
+ * Implements the Region Repository interface
+ */
 class RegionRepository implements RegionRepositoryInterface
 {
     public function getRegions(): RegionCollection

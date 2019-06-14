@@ -7,6 +7,12 @@ use App\Core\Data\Exception\ItemNotFoundException;
 use App\Region\Type\RegionId;
 use App\Supplier\Entity\SupplierDeliveryRegion;
 
+/**
+ * Class SupplierDeliveryRegionCollection
+ * @package App\Supplier\Collection
+ *
+ * Stores a collection of Supplier Delivery Region entities
+ */
 class SupplierDeliveryRegionCollection extends AbstractCollection
 {
     public function add(SupplierDeliveryRegion $supplierDeliveryRegion): void

@@ -4,6 +4,13 @@ namespace App\Core\Type;
 
 use App\Core\Type\Exception\ConstraintException;
 
+/**
+ * Class ConstrainedString
+ * @package App\Core\Type
+ *
+ * Must be extended to be used.
+ * Ensures string values are within min/max length criteria.
+ */
 abstract class ConstrainedString
 {
     /** @var string */

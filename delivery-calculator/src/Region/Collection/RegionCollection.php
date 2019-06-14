@@ -8,6 +8,12 @@ use App\Region\Entity\Region;
 use App\Region\Type\RegionId;
 use App\Region\Type\RegionName;
 
+/**
+ * Class RegionCollection
+ * @package App\Region\Collection
+ *
+ * Stores Region Entities in a collection
+ */
 class RegionCollection extends AbstractCollection
 {
     public function add(Region $region): void

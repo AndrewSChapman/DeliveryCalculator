@@ -14,6 +14,10 @@ use App\Supplier\Repository\SupplierDeliveryDay\SupplierDeliveryDayRepositoryInt
 use App\Supplier\Repository\SupplierDeliveryRegion\SupplierDeliveryRegionRepositoryInterface;
 use App\Supplier\Type\SupplierId;
 
+/**
+ * Class SupplierDeliveryEstimateService
+ * @package App\Supplier\Service
+ */
 class SupplierDeliveryEstimateService implements SupplierDeliveryEstimateServiceInterface
 {
     /** @var SupplierRepositoryInterface */
@@ -59,8 +63,6 @@ class SupplierDeliveryEstimateService implements SupplierDeliveryEstimateService
         // Get the days of the week (and associated start/finish times) that the supplier actually delivers
         $supplierDeliveryDays = $this->supplierDeliveryDayRepository->getDeliveryDaysForSupplier($supplierId);
 
-        $orderDayOfWeek->increment();
-
         // Is the date and time of order a valid business day?
         $orderDateIsBusinessDate = false;
         if ($this->isBusinessDay($supplierDeliveryDays, $orderDayOfWeek)) {
@@ -69,6 +71,8 @@ class SupplierDeliveryEstimateService implements SupplierDeliveryEstimateService
                 $orderDateIsBusinessDate = true;
             }
         }
+
+        $orderDayOfWeek->increment();
 
         // If the order date/time is not a valid business day, add an additional day to the num business delivery
         // days since the current day doesn't move the order.

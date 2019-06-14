@@ -5,6 +5,12 @@ use App\Core\Type\DayNumber;
 use App\Core\Type\Time;
 use App\Supplier\Type\SupplierId;
 
+/**
+ * Class SupplierDeliveryDay
+ * @package App\Supplier\Entity
+ *
+ * Stores the details of a supplier delivery day
+ */
 class SupplierDeliveryDay
 {
     /** @var SupplierId */

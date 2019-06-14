@@ -8,6 +8,12 @@ use App\Supplier\Collection\SupplierDeliveryDayCollection;
 use App\Supplier\Entity\SupplierDeliveryDay;
 use App\Supplier\Type\SupplierId;
 
+/**
+ * Class SupplierDeliveryDayRepository
+ * @package App\Supplier\Repository\SupplierDeliveryDay
+ *
+ * Implements the supplier delivery day repository
+ */
 class SupplierDeliveryDayRepository implements SupplierDeliveryDayRepositoryInterface
 {
     public function getDeliveryDaysForSupplier(SupplierId $supplierId): SupplierDeliveryDayCollection

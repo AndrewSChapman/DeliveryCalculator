@@ -7,6 +7,12 @@ use App\Supplier\Entity\Supplier;
 use App\Supplier\Type\SupplierId;
 use App\Supplier\Type\SupplierName;
 
+/**
+ * Class SupplierRepository
+ * @package App\Supplier\Repository\Supplier
+ *
+ * Implements the supplier repository
+ */
 class SupplierRepository implements SupplierRepositoryInterface
 {
     public function getSupplierById(SupplierId $supplierId): Supplier

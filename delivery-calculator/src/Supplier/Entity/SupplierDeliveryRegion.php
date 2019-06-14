@@ -5,6 +5,12 @@ use App\Core\Type\WholeNumber;
 use App\Region\Type\RegionId;
 use App\Supplier\Type\SupplierId;
 
+/**
+ * Class SupplierDeliveryRegion
+ * @package App\Supplier\Entity
+ *
+ * Stores the details of a supplier delivery region.
+ */
 class SupplierDeliveryRegion
 {
     /** @var SupplierId */

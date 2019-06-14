@@ -3,6 +3,12 @@ namespace App\Core\Type;
 
 use App\Core\Type\Exception\ConstraintException;
 
+/**
+ * Class Timestamp
+ * @package App\Core\Type
+ *
+ * Represents a unix timestamp.
+ */
 abstract class Timestamp
 {
     /** @var int */
