@@ -11,5 +11,5 @@ interface SupplierDeliveryEstimateServiceInterface
         SupplierId $supplierId,
         \DateTimeImmutable $orderDate,
         RegionId $deliveryRegion
-    ): \DateTimeImmutable;
+    ): string;
 }

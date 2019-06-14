@@ -53,11 +53,11 @@ class SupplierDeliveryDay
 
     public function timeIsBeforeStartTime(Time $time): bool
     {
-        return $this->startTime->isGreaterThan($time);
+        return $this->startTime->isGreaterThanOrEqualTo($time);
     }
 
     public function timeIsAfterEndTime(Time $time): bool
     {
-        return $this->endTime->isLessThan($time);
+        return $this->endTime->isLessThanOrEqualTo($time);
     }
 }

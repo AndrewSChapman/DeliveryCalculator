@@ -7,7 +7,7 @@ use App\Core\Type\Exception\ConstraintException;
 class WholeNumber
 {
     /** @var int */
-    private $value;
+    protected $value;
 
     public function __construct(int $value)
     {
@@ -29,5 +29,10 @@ class WholeNumber
     public function toString(): string
     {
         return strval($this->value);
+    }
+
+    public function increment(): void
+    {
+        $this->value++;
     }
 }

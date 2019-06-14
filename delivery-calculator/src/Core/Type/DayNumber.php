@@ -14,15 +14,21 @@ class DayNumber extends WholeNumber
     public const DAY_FRIDAY = 5;
     public const DAY_SATURDAY = 6;
 
-    /** @var int */
-    private $value;
-
     public function __construct(int $value)
     {
         parent::__construct($value);
 
         if ($value > self::DAY_SATURDAY) {
             throw new ConstraintException('DayNo must be <= 6');
+        }
+    }
+
+    public function increment(): void
+    {
+        parent::increment();
+
+        if ($this->value > self::DAY_SATURDAY) {
+            $this->value = self::DAY_SUNDAY;
         }
     }
 }

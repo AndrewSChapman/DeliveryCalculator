@@ -14,7 +14,7 @@ class SupplierDeliveryDayRepository implements SupplierDeliveryDayRepositoryInte
     {
         $collection = new SupplierDeliveryDayCollection();
 
-        for ($dayNo = DayNumber::DAY_MONDAY; $dayNo <= DayNumber::DAY_SATURDAY; $dayNo++) {
+        for ($dayNo = DayNumber::DAY_MONDAY; $dayNo <= DayNumber::DAY_FRIDAY; $dayNo++) {
             $collection->add(new SupplierDeliveryDay(
                 $supplierId,
                 new DayNumber($dayNo),
